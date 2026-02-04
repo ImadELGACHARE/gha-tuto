@@ -12,6 +12,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : Récupérer le code du dépôt
       - name: recup env var
-        run: echo "celui ci est un variable d'environnement : $APP_ENV"
+        run: "echo celui ci est un variable d'environnement : $APP_ENV"
