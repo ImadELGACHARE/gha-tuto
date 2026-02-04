@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - name: recup env var
-        run: "echo celui ci est un variable d'environnement : $APP_ENV"
+        run: "echo celui ci est un variable d environnement : $APP_ENV"
