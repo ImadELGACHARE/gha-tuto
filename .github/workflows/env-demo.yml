@@ -1,0 +1,17 @@
+name: ENV DEMO
+
+# 1. Déclencheurs (Triggers)
+on: workflow_dispatch
+
+# 2. Les tâches (Jobs)
+jobs:
+  dev-job:
+    env:
+      APP_ENV : dev
+    # L'environnement d'exécution
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Récupérer le code du dépôt
+      - name: recup env var
+        run: echo "celui ci est un variable d'environnement : $APP_ENV"
