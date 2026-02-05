@@ -5,7 +5,7 @@ jobs:
   build_api:
    runs-on: windows-latest
    env:
-      FilesNumber: 10
+      FilesNumber: dirre
    steps:
     - name: recuperer files
-      run: " echo lire les $FilesNumber fichiers"
+      run: echo "lire les $FilesNumber fichiers"
