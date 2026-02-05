@@ -1,1 +1,11 @@
+name: variable d environnement
+on: [push, workflow_dispatch]
 
+jobs:
+  build_api:
+   runs-on: windows-latest
+   env:
+      FilesNumber: 10
+   steps:
+    - name: recuperer files
+      run: " echo lire les $FilesNumber fichiers"
